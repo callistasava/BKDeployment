@@ -126,20 +126,20 @@ with tab1:
   # -- Value 0: Female
   # -- Value 1: Male
 
-  cp_sb = st.sidebar.selectbox(label=":violet[**Chest pain type**]", options=["Typical angina", "Atypical angina", "Non-anginal pain", "Asymptomatic"])
+  cp_sb = st.sidebar.selectbox(label=":violet[**Chest pain type**]", options=["Non-angina Pain", "Aortic dissection", "Typical angina", "Asymptomatic"])
   st.sidebar.write("")
   st.sidebar.write("")
-  if cp_sb == "Typical angina":
+  if cp_sb == "Non-angina Pain":
     cp = 1
-  elif cp_sb == "Atypical angina":
+  elif cp_sb == "Aortic dissection":
     cp = 2
-  elif cp_sb == "Non-anginal pain":
+  elif cp_sb == "typical angina":
     cp = 3
   elif cp_sb == "Asymptomatic":
     cp = 4
-  # -- Value 1: typical angina
-  # -- Value 2: atypical angina
-  # -- Value 3: non-anginal pain
+  # -- Value 1: Non-angina Pain
+  # -- Value 2: Aortic dissection
+  # -- Value 3: typical angina
   # -- Value 4: asymptomatic
 
   trestbps = st.sidebar.number_input(label=":violet[**Resting blood pressure** (in mm Hg on admission to the hospital)]", min_value=df_final['trestbps'].min(), max_value=df_final['trestbps'].max())
