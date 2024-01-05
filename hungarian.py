@@ -247,7 +247,7 @@ with tab1:
 
   st.write("")
   st.write("")
-  st.subheader("Prediction is:")
+  st.subheader("The Result of the Prediction is :")
   st.subheader(result)
 
 with tab2:
@@ -289,7 +289,7 @@ with tab2:
         result = "Heart disease level 4"
       result_arr.append(result)
 
-    uploaded_result = pd.DataFrame({'Prediction Result is': result_arr})
+    uploaded_result = pd.DataFrame({'The Result of the Prediction is ': result_arr})
 
     for i in range(70, 101):
       status_text.text(f"{i}% complete")
