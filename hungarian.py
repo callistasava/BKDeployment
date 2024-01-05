@@ -237,9 +237,9 @@ with tab1:
     if prediction == 0:
       result = ":green[**Healthy**]"
     elif prediction == 1:
-      result = ":orange[**Heart disease level 1**]"
+      result = ":yellow[**Heart disease level 1**]"
     elif prediction == 2:
-      result = ":orange[**Heart disease level 2**]"
+      result = ":yellow[**Heart disease level 2**]"
     elif prediction == 3:
       result = ":red[**Heart disease level 3**]"
     elif prediction == 4:
